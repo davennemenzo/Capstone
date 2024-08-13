@@ -31,14 +31,15 @@ import { Link } from "@inertiajs/vue3";
 
                 <div class="hidden md:flex md:space-x-3 md:items-center">
                     <a href="#" class="text-black hover:text-gray-600 font-bold"
-                        >Sign</a
+                        >Sign up</a
                     >
 
-                    <button
-                        class="bg-blue-500 text-white hover:bg-blue-600 font-bold py-2 px-5 rounded"
+                    <Link
+                        :href="route('login')"
+                        class="inline-flex items-center px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                     >
                         Login
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
